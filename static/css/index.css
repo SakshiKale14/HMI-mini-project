@@ -64,7 +64,7 @@ section{
 }
 .hero{
     height: 97vh;
-    background: url(/img/geometry-1620577009753-6255.jpg);
+    background: url(/static/img/geometry-1620577009753-6255.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
