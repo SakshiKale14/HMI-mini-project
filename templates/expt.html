@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments | {{name}}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<style>
+    .navbar{
+       position: unset;
+    }
+    .exptswrap{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        background:url(/static/img/exptBg.jpeg);
+        background-repeat:no-repeat ;
+        background-size: cover;
+    }
+    .expts{
+        cursor: pointer;
+        width: 20%;
+        margin: 1rem;
+        margin-bottom: 2rem;
+        
+      
+        color:white;
+        position: relative;
+        z-index: 3;
+        overflow-y: hidden;
+        transform: all 0.3s ease;
+    }
+    .expts .desc{
+        padding: 1rem;
+        padding-bottom: 30px;
+        font-weight: 200;
+        margin-top: 2rem;
+        
+        /* height: 10rem ;
+        transform: translateY(100%);
+        transition: all 0.3s ease; */
+    }
+    .expts:hover{
+        box-shadow: 0px 1px 3px rgb(25, 29, 29);
+    }
+    .click{
+        opacity: 0;
+        color:orange;
+        order:4
+    }
+    .expts:hover .click{
+        opacity: 1;
+    }
+   
+    .psuedo{
+        position: absolute;
+        bottom: 0;
+        height: 30px;
+        width: 100%;
+        z-index:5;
+        background-color:transparent;
+    }
+    .expts:hover:after{
+        transform: translateY(0);
+    }
+    .student_details{
+        font-family: 'Lato','sans-serif';
+        display: flex;
+        
+        color:white;
+        align-items: center;
+        
+    }
+    .img{
+        height: 100%;
+    }
+    .img img{
+        margin-right: 1rem;
+        height: 100%;
+        width: 5rem;
+    }
+    .no{
+    font-size: 10rem;
+    position: absolute;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gray;
+    -webkit-text-fill-color: gray;
+    opacity: 0.3;
+    left: 0rem;
+    top: -37px;
+    border: none;
+    transition: all 0.4s ease;
+
+}
+.expts:hover .no{
+    font-size: 12rem;
+    top:-30px
+}
+</style>
+<body data-name={{name}}>
+    <div class="main">
+        <div class="navbar">
+            <a id="brand" href='/'> reccccords.</a>
+            <div class="nav-contents">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                
+            </div>
+        </div>
+        <section class="exptcontainer"> 
+            <div class="student_details">
+                <div class="img" >
+                    <img src="/static/img/{{data.img}}" alt="">
+                </div>
+                <div class="text">
+                    <h1 style="margin-bottom: 0.5rem;"><span class="stu_name">{{name}}'s</span> Experiments</h1>
+                    <p style="font-weight: 200;">Roll No: {{data.roll}}</p>
+                    <p style="font-weight: 200;">ID: {{data.id}}</p>
+
+                </div>
+                
+
+            </div>
+            
+
+            <div class="exptswrap">
+                <div class="expts" data-expNo='1a'>
+                    <div class="no">1a</div>
+                    <div class="desc">
+                        <div class="click">Click to view</div>Analyze any Three different Applications/web sites assigned domains to you in the attached file based on Usability principles of HMI. Use the attached form to rate them.</div>
+                    <div class="psuedo"></div>
+                </div>
+                <div class="expts" data-expNo='1b'>
+                    <div class="no">1b</div>
+                    <div class="desc">
+                        <div class="click">Click to view</div>
+                        Visualize the ratings using graphs for experiment 1a
+                    </div>
+                     <div class="psuedo"></div>
+                </div>
+                <div class="expts" data-expNo='2'>
+                    <div class="no">2</div>
+                    <div class="desc">
+                        <div class="click">Click to view</div>
+                        Create Web based Mathematical application for kids of age of 4 to 7 years.
+                    </div>
+                     <div class="psuedo"></div>
+                </div>
+                <div class="expts" data-expNo='3'>
+                    <div class="no">3</div>
+                    <div class="desc">
+                        <div class="click">Click to view</div>
+                        Design GUI for the data entry form for any application of selected domain which you have analysed.
+                    </div>
+                     <div class="psuedo"></div>
+                </div>
+                <div class="expts" data-expNo='4'>
+                    <div class="no">4</div>
+                    <div class="desc">
+                        <div class="click">Click to view</div>
+                        Design interface for automated ticket vending machine (ATVM) for Metro/Mumbai Local train.
+                    </div>
+                     <div class="psuedo"></div>
+                </div>
+                <div class="expts" data-expNo='5'>
+                    <div class="no">5</div>
+                    <div class="desc">
+                        <div class="click">Click to view</div>
+                        Design an interface for any machine which you found troublesome to use and want to change its interface like automatic washing machine, microwave oven etc.
+                    </div>
+                     <div class="psuedo"></div>
+                </div>
+                <div class="expts" data-expNo='6'>
+                    <div class="no">6</div>
+                    <div class="desc">
+                        <div class="click">Click to view</div>Design website for an application of the selected domain with home page and subsequent pages. </div>
+                     <div class="psuedo"></div>
+                </div>
+                <div class="expts" data-expNo='7'>
+                    <div class="no">7</div>
+                    <div class="desc">
+                        <div class="click">Click to view</div>Design the logically justifiable menus for selected website/application.</div>
+                     <div class="psuedo"></div>
+                </div>
+                <div class="expts" data-expNo='8'>
+                    <div class="no">8</div>
+                    <div class="desc">
+                        <div class="click">Click to view</div>
+                        Design a theme based Icon for the selected Application.
+                    </div>
+                     <div class="psuedo"></div>
+                </div>
+                <div class="expts" data-expNo='9'>
+                    <div class="no">9</div>
+                    <div class="desc">
+                        <div class="click">Click to view</div>
+                        Prepare the Interview Questions for Subject Matter Expert (SME) of your selected domain to gather requirements.
+                    </div>
+                     <div class="psuedo"></div>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <script src="/static/js/index.js"></script>
+    <script>
+        let name=document.querySelector('body').dataset.name
+       url_data={
+           ritik:{
+               '1a':'https://drive.google.com/file/d/1lQLEbnCIGUCQSie7n7Y2gXT-dWwyhvkl/view?usp=sharing',
+               '1b':'https://drive.google.com/file/d/1Xol1ttNVJfVUZGCMhlkes7fyqquJRTC3/view?usp=sharing',
+               '2':'https://drive.google.com/file/d/1p2bwpQwQMDUmvrvhNcvjbh8xydiW2eR9/view?usp=sharing',
+               '3':'https://drive.google.com/file/d/16GASpohp5eyxU6hLtXDUiC9vR3q-fKTa/view?usp=sharing',
+               '4':'https://drive.google.com/file/d/1Yl5ZEoZmGLKy6qdpmietm0c_vk7DKStt/view?usp=sharing',
+               '5':'https://drive.google.com/file/d/1BDceRfuiubXtLIVUf9U9mHPwgNMgE4v6/view?usp=sharing',
+               '6':'https://drive.google.com/file/d/1tniTlcOSXueOxSMxXKXqorl-HFB8BORF/view?usp=sharing',
+               '7':'https://drive.google.com/file/d/1ySirjSBvwu7Ra95gYWkJE2rmdQCQpVnb/view?usp=sharing',
+               '8':'https://drive.google.com/file/d/1gEGojoiLqQEPTYXxj1pL8LMsbRP-kcxj/view?usp=sharing',
+               '9':'https://drive.google.com/file/d/1Nqfn1bfrTuKDkzLMrF0cO5rmWxoLQveq/view?usp=sharing'
+           },
+           sakshi:{
+                '1a':'https://drive.google.com/file/d/1Tcrv-q6a8v5w9BhU3PbBLcYWyK7vjxOH/view?usp=sharing',
+               '1b':'https://drive.google.com/file/d/1au55Gy6AlqVCU4TuB0OYv9bNBTpbAto0/view?usp=sharing',
+               '2':'https://drive.google.com/file/d/1unIYYV-SZjqIjFCeH5lngs65ZdnFOKVF/view?usp=sharing',
+               '3':'https://drive.google.com/file/d/1fKVPDAKfc8xRfCbjO_eGqG9HVENSjCTo/view?usp=sharing',
+               '4':'https://drive.google.com/file/d/1MJ4Bc9xwSzttVDaKNNZcINmtXM-BnlCn/view?usp=sharing',
+               '5':'https://drive.google.com/file/d/1r8UA67sBh4uDox_BKgLO3QrtoGjmYsLJ/view?usp=sharing',
+               '6':'https://drive.google.com/file/d/1TRoReSKevfnMW_P_KTb7IfyyoNQso6Zf/view?usp=sharing',
+               '7':'https://drive.google.com/file/d/1ZVk3BAYWPBT2FtSp0gdnTVMZ3Ka5NA-m/view?usp=sharing',
+               '8':'https://drive.google.com/file/d/1eqlEYulWbje6mvZm2KmQWdSzWMU7sOTi/view?usp=sharing',
+               '9':'https://drive.google.com/file/d/1s1o5NWR-weD7czvbd6WGh9lvNkUFWJ-2/view?usp=sharing'
+           },
+           amresh:{
+                '1a':'https://drive.google.com/file/d/1r-GgTsc9Gvaj1li_d8mpu4jgOMGK08GL/view?usp=sharing',
+               '1b':'https://drive.google.com/file/d/1oLf0llYxjZ9pYngn051RhqWGtGO1ahtH/view?usp=sharing',
+               '2':'https://drive.google.com/file/d/1_3OnQMVnnaRdBlndLgKFLADBrSOyWIR5/view?usp=sharing',
+               '3':'https://drive.google.com/file/d/1faGBCynB3OPTXZSJ1wDLIIDxw5dalCXY/view?usp=sharing',
+               '4':'https://drive.google.com/file/d/1QbhCtbCZe_GRLdEqJKrNcrwa3AZ7viUV/view?usp=sharing',
+               '5':'https://drive.google.com/file/d/1Eq5oMNuoNcx-krFVu6pyTIYHE3lHbAWn/view?usp=sharing',
+               '6':'https://drive.google.com/file/d/17cbD_AdOrgng2a6lVZzqFIwBLIs6jyF-/view?usp=sharing',
+               '7':'https://drive.google.com/file/d/1bEU1UOfyvBMZX9ay1HrDjw2pa2J08Vmr/view?usp=sharing',
+               '8':'https://drive.google.com/file/d/1arlBfHr1J2_lEc6Zisikm7KBOIp3ncDG/view?usp=sharing',
+               '9':'https://drive.google.com/file/d/1WoOgjsGD7M8qQEJnW_v47pHhwxZjS5OW/view?usp=sharing'
+           }
+       }
+     
+        document.querySelectorAll('.expts').forEach(expt=>{
+            expt.addEventListener('click',function(e){
+                let expNo=e.target.closest('.expts').dataset.expno
+                
+                location.href=url_data[name][expNo]
+            })
+        })
+
+    </script>
+   
+</body>
+</html>

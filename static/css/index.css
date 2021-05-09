@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none; 
+    margin-top: 3rem;
+}
+ul li{
+    padding-left: 1rem;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #191d1d;
+    color: white;
+}
+section{
+    height: 80vh;
+    
+    
+    display: flex;
+    flex-direction: column;
+}
+#ritik .image{
+    order: -2; margin-right: 2rem;
+}
+
+.navbar{
+    box-sizing: border-box;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    padding: 1rem 7rem;
+    z-index: 3;
+    justify-content: space-between;
+    color:white;
+    transition: all 0.1s ease;
+
+}
+.nav-contents{
+    display: flex;
+    align-items: center;
+}
+.nav-contents a{
+    margin-right: 1rem;
+}
+#brand{
+    font-size: 2rem;
+    font-weight: 700;
+   
+}
+.hero h1{
+    font-size: 4rem;
+}
+.hero p{
+    font-weight: lighter;
+}
+.hero{
+    height: 97vh;
+    background: url(/img/geometry-1620577009753-6255.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation: bgMove  1s infinite;
+    
+    animation-duration: 4s;
+}
+@keyframes bgMove {
+    0%{background-position: 1rem 1rem;}
+    50%{background-position:1.4rem 1.4rem ;}
+    100%{background-position:1rem 1rem;}
+}
+section.profile{
+   
+    
+
+    background:#191d1d;
+    
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    color: white;
+    justify-content: space-between;
+}
+
+.profile .detail{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+}
+#sakshi,#amresh{
+    padding-right: 0;
+    padding-left: 7rem;
+}
+#ritik{
+    padding-left: 0;
+    padding-right: 7rem;
+}
+.profile img{
+    height: 100%;
+    width: 100%;
+filter: grayscale(1);
+    right: 0;
+    bottom: 100%;
+    transition: all 0.5s ease-out;
+}
+.image{
+    position: relative;
+    right: 0;
+    width: 50%;
+}
+.profile img:hover{
+    filter: grayscale(0);
+}
+.name{
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+
+}
+.profile div{
+    font-weight: lighter;
+}
+.profile .detail{
+    width: 48%;
+}
+#sakshi .image,#amresh .image{
+    margin-left: 1rem;
+}
+span.title{
+    font-size: small;
+    color: gray;
+    letter-spacing: 1px;
+}
+.detail a{
+   font-weight: 300;
+    width: fit-content;
+    padding: 10px;
+    border: 1px solid white;
+    margin-top: auto;
+  transition: all 0.2s linear;
+}
+.detail a:hover{
+    background-color: white;
+    color: black;
+    border:1px solid black
+}
+
+
+.footer{
+    background-color: black;
+    height: 3rem;
+
+}
+.exptcontainer{
+    
+    padding: 1rem 7rem;
+   margin-top: 4rem;
+}
+.exptcontainer h1{
+    text-transform: capitalize;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #292e2e;
+}
+
+
+p.bio{
+    margin-top:3rem;
+ 
+}
+
+
+
+
+@media screen and  (max-width:900px){
+    
+    .hero{
+        height: 100vh;
+    }
+    .student_cards .wrapper{
+        
+        flex-direction: column;
+        
+    }
+    .navbar{
+        padding: 1rem 1rem;
+    }
+    .profile .detail{
+       
+        height: 100%;
+    }
+    
+    .image{    position: absolute;
+        right: 0;
+        bottom: 6rem;
+        width: 15rem;
+        height: 16rem;}
+    .name{
+        font-size: 3rem;
+    }
+    .card{
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+    .card img{
+        width: 100%;
+    }
+    section.profile{
+        position: relative;
+        flex-direction: column;
+    }
+    #sakshi,#amresh{
+        padding-left: 1rem;
+    }
+    #ritik{
+        padding-right: 0rem;
+        padding-left: 1rem;
+    }
+    #ritik .image{
+        order:unset;
+        margin-right: unset;
+    }
+    #sakshi .image,#amresh .image{
+        margin-left: 0rem;
+    }
+    .detail a{
+        font-size: small;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMI Project | About </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<style>
+    section{
+        margin-top: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        margin-bottom: 1rem;
+    }
+    .students{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding:1rem 7rem
+    }
+    a:hover{
+        text-decoration: underline;
+        color:orange
+    }
+    
+</style>
+
+<body >
+    <div class="main">
+        <div class="navbar">
+            <div id="brand">reccccords.</div>
+            <div class="nav-contents">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                
+            </div>
+        </div>
+        <section class="about">
+            <h1>About Us</h1>
+            This website is created as part of HMI mini-project. It is created using HTML, CSS, and JavaScript for frontend and Flask (a Python framework) for backend. <br>
+            It lists all the experiments of the following students :-
+            <div class="students">
+                <a href="/experiments/?name=sakshi">1. Sakshi Kale (Roll No- 52)</a>
+            <a href="/experiments/?name=amresh">2. Amresh Yadav (Roll No- 53)</a>
+            <a href="/experiments/?name=ritik">3.Ritik Rahangdale (Roll No- 54)</a>
+
+            </div>
+            
+        </section>
+    </div>
+</body>
+</html>
