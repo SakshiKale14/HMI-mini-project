@@ -91,7 +91,7 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: gray;
     -webkit-text-fill-color: gray;
-    opacity: 0.3;
+    opacity: 0.5;
     left: 0rem;
     top: -37px;
     border: none;
@@ -101,6 +101,19 @@
 .expts:hover .no{
     font-size: 12rem;
     top:-30px
+}
+@media screen and max-width(900px) {
+    .exptcontainer{
+        padding: 1rem;;
+    }
+    .exptswrap{
+        flex-wrap: unset;
+        flex-direction: column;
+    }
+    .expts{
+        width: 100%;
+    }
+    
 }
 </style>
 <body data-name={{name}}>

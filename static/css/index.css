@@ -99,6 +99,7 @@ section.profile{
     flex-direction: column;
     padding-top: 3rem;
     padding-bottom: 3rem;
+
     
 }
 #sakshi,#amresh{
@@ -204,6 +205,7 @@ p.bio{
     .profile .detail{
        
         height: 100%;
+        width: unset;
     }
     
     .image{    position: absolute;
@@ -241,5 +243,8 @@ p.bio{
     }
     .detail a{
         font-size: small;
+    }
+    p.bio{
+        display: none;
     }
 }
